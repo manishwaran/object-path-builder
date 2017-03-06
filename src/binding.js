@@ -47,8 +47,7 @@ export default class Binding extends Base {
 
   validateBinding(string) {
     this.initSyntaxCheck()
-    let index = 1
-    for(; index < string.length; index++) {
+    for(let index = 1; index < string.length; index++) {
       if(this.makeDecision(string[index])) {
         return index
       }

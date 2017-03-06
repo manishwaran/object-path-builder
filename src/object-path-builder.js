@@ -2,8 +2,8 @@ import Binding from './binding';
 
 export default class ObjectPathBuilder extends Binding {
 
-  onDot(string, offset = 1, deliminator = ['.', '[']) {
-    const key = this.pushObjectKey(string.slice(offset), deliminator)
+  onDot(string, offset = 1, delimitor = ['.', '[']) {
+    const key = this.pushObjectKey(string.slice(offset), delimitor)
     return string.slice(offset + key.length)
   }
 
